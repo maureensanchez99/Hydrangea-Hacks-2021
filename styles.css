@@ -1,5 +1,4 @@
-/* CSS for the homepage example index.html*/
-* {
+*{
 	box-sizing: border-box;
 }
 
@@ -14,12 +13,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-header {
-	height: 10vh;
-	line-height: 10vh;
-}
-
-main {
+main{
 	height: 80vh;
 	display: flex;
 	flex-direction: column;
@@ -28,18 +22,7 @@ main {
 	text-align: center;
 }
 
-h1 {
-	font-size: 80px;
-	margin-top: 0;
-	margin-bottom: 0;
-}
-
-footer {
-	height: 10vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	text-align: center;
-	color: gray;
-	font-size: 14px;
+h2 {
+	color:red;
+	
 }
