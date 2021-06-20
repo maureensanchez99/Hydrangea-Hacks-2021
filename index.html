@@ -12,27 +12,28 @@
 
 	<body>
 		<header>
-			<div class="logo">
-				<h1>Uplift</h1>
-			</div>
-			{{^private}}
-				<ul class="nav-items">
-					<a href='login'> Login </a>
+			<div class="logo"> Uplift </div>
+			<nav>
+				{{^private}}
 					<a href='signup'>Signup</a>
-				</ul>
-			{{/private}}	
-			
-			{{#private}}
-				<a href='account'>
-					<img src='{{avatar}}'>
-				</a>
-				<a onclick='logout()'>Logout</a>
-			{{/private}}
+					<a href='login'>Login</a>
+				{{/private}}
+				
+				{{#private}}
+					<a href='account'>
+						<img src='{{avatar}}'>
+					</a>
+					<a onclick='logout()'>Logout</a>
+				{{/private}}
+			</nav>
 		</header>
 
 		<main>
-			<h1> Welcome to Uplift </h1>
-			<h2> Connect with the elderly in your local area and talk to them about how their life experience has been and what they think you should know about as you bond over mutually enjoyed activities such as nature hikes, crafting, and etc. </h2>
+			<div class="text">
+				<h1> Welcome to Uplift </h1>
+				<h2> Connect with the elderly in your local area and talk to them about how their life experience has been and what they think you should know about as you bond over mutually enjoyed activities such as nature hikes, crafting, and etc. 
+				</h2>
+			</div>
 		</main>
 	</body>
 
