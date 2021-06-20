@@ -14,11 +14,16 @@
 			<div class="logo">
 				<h1>Uplift</h1>
 			</div>
-			<ul class="nav-items">
-				<li> Log In </li>
-				<li> Sign Up </li>
-			</ul>
+			{{^private}}
+				<ul class="nav-items">
+					<a href='login' li> Log In </li>
+					<li> Sign Up </li>
+				</ul>
+			{{/private}}
 
+			{{#private}}
+			
+			{{/private}}
 		</header>
 		
 		<main>
