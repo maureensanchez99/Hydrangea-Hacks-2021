@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<link rel="stylesheet" href="styles.css">
 		<script type="module" src="script.js"></script>
 		<title>Uplift</title>
 	</head>
-	
+
 	<body>
 		<header>
 			<div class="logo">
@@ -16,20 +17,23 @@
 			</div>
 			{{^private}}
 				<ul class="nav-items">
-					<a href='login' li> Log In </li>
-					<li> Sign Up </li>
+					<a href='login'> Login </a>
+					<a href='signup'>Signup</a>
 				</ul>
-			{{/private}}
-
-			{{#private}}
+			{{/private}}	
 			
+			{{#private}}
+				<a href='account'>
+					<img src='{{avatar}}'>
+				</a>
+				<a onclick='logout()'>Logout</a>
 			{{/private}}
 		</header>
-		
+
 		<main>
 			<h1> Welcome to Uplift </h1>
 			<h2> Connect with the elderly in your local area and talk to them about how their life experience has been and what they think you should know about as you bond over mutually enjoyed activities such as nature hikes, crafting, and etc. </h2>
 		</main>
 	</body>
-	
+
 </html>
